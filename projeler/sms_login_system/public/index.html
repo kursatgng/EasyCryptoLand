@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefon ile Giriş</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Telefon ile Giriş</h2>
+    <form id="phoneForm">
+        <label for="phone">Telefon Numarası:</label>
+        <input type="text" id="phone" name="phone" required>
+        <button type="button" onclick="sendCode()">Gönder</button>
+    </form>
+    
+    <form id="verificationForm" style="display:none;">
+        <label for="code">Doğrulama Kodu:</label>
+        <input type="text" id="code" name="code" required>
+        <button type="button" onclick="verifyCode()">Doğrula</button>
+    </form>
+
+    <script src="sendCode.js"></script>
+</body>
+</html>

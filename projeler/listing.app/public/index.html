@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeleme Başvuru Formu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Listeleme Başvuru Formu</h2>
+        <form id="applicationForm">
+            <label for="name">Ad:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="listing">Listeleme:</label>
+            <textarea id="listing" name="listing" required></textarea>
+            
+            <button type="button" onclick="submitApplication()">Gönder</button>
+        </form>
+        <div class="result" id="result"></div>
+        <h2>Başvurular</h2>
+        <div id="applications"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

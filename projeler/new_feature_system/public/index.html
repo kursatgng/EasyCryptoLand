@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Özellik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Özellik Önerisi</h2>
+        <form id="featureForm">
+            <label for="featureSuggestion">Yeni Özellik Öneriniz:</label>
+            <textarea id="featureSuggestion" name="featureSuggestion" required></textarea>
+            <button type="button" onclick="submitSuggestion()">Öneriyi Gönder</button>
+        </form>
+        <div class="result" id="result"></div>
+        <h2>Kullanıcı Önerileri</h2>
+        <div id="suggestions"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

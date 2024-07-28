@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC İşlemleri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>KYC İşlemleri</h2>
+        <form id="kycForm">
+            <label for="name">Ad:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="document">Kimlik Belgesi:</label>
+            <input type="file" id="document" name="document" required>
+            
+            <button type="button" onclick="submitKYC()">Gönder</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
